@@ -211,7 +211,7 @@ position: relative;
         padding: 20px;
         
     }
-    #game {
+    .round-div {
         display: flex;
         align-items: center;
         justify-content: center;

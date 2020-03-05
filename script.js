@@ -235,7 +235,8 @@ function arrangeCards(){
         let roundDiv = document.createElement('div');
         let roundH2 = document.createElement('h2');
         roundH2.innerText = round.roundName;
-        roundDiv.classList.add(`round${round.roundId}`)
+        roundDiv.classList.add(`round-div`);
+        roundDiv.classList.add(`round${round.roundId}`);
         roundDiv.appendChild(roundH2);
         round.cards = arrangeRandomCardObj(round);
         round.cards.forEach(card => {

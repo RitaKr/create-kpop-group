@@ -200,16 +200,20 @@ position: relative;
 }
 @media (max-width: 720px) {
     .card {
-        width: 90%;
+        width: 400px;
+        height: 200px;
         margin: 2% auto;
     }
     #content {
-        padding: 20px;
+        padding: 0px;
         
     }
     #all {
         
         width: 100%;
         
+    }
+    .ilustration {
+        width: 100%;
     }
 }

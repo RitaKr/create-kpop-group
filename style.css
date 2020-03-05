@@ -199,6 +199,9 @@ position: relative;
     justify-content: center;
 }
 @media (max-width: 720px) {
+    h1, h2 {
+        font-size: 0.9em;
+    }
     .card {
         width: 90%;
         height: 220px;
@@ -207,6 +210,11 @@ position: relative;
     #content {
         padding: 20px;
         
+    }
+    #game {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     #all {
         

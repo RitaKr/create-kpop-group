@@ -199,30 +199,38 @@ position: relative;
     justify-content: center;
 }
 @media (max-width: 720px) {
-    h1, h2 {
-        font-size: 0.9em;
+    h2 {
+        font-size: 2em;
+    }
+    #content h1 {
+        font-size: 2.5em;
+        margin-left: 0;
     }
     .card {
-        width: 90%;
-        height: 220px;
-        margin: 2% auto;
+        width: 44.5%;
+        height: 160px;
+        margin: 2%;
     }
     #content {
         padding: 20px;
         
     }
     .round-div {
-        display: flex;
+        display: flexbox;
+        justify-content: space-between;
         align-items: center;
-        justify-content: center;
         flex-direction: column;
     }
     #all {
-        
-        width: 100%;
+        margin: 0 2%;
+        width: 96%;
         
     }
     .ilustration {
         width: 100%;
+        margin-bottom: 10px
+    }
+    .answer-title {
+        font-size: 0.85em;
     }
 }

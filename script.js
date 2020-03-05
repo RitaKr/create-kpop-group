@@ -189,12 +189,12 @@ let gameArr = [
         roundId: 15,
         aviable: true,
         cards: [
-            '<img class="background-img" src="images/15/theshow.jpg" width="100%"><span class="cilent-table">TheShow</span>',
-            '<img class="background-img" src="images/15/mcountdown.jpg" width="100%"><span class="cilent-table">MCOUNTDOWN</span>',
-            '<img class="background-img" src="images/15/inkigayo.jpg" width="100%"><span class="cilent-table">Inkigayo</span>',
-            '<img class="background-img" src="images/15/k-chart.jpg" width="100%"><span class="cilent-table">K-chart</span>',
-            '<img class="background-img" src="images/15/show-champion.jpg" width="100%"><span class="cilent-table">Show-champion</span>',
-            '<img class="background-img" src="images/15/umt.jpg" width="100%" title="УКРАЇНА МАЄ ТАЛАНТ)0)))"><span class="cilent-table">УКРАЇНА МАЄ ТАЛАНТ)0)))</span>'
+            '<img class="background-img" src="images/15/theshow.jpg" width="100%" ><span class="cilent-table">TheShow</span>',
+            '<img class="background-img" src="images/15/mcountdown.jpg" ><span class="cilent-table">MCOUNTDOWN</span>',
+            '<img class="background-img" src="images/15/inkigayo.jpg" ><span class="cilent-table">Inkigayo</span>',
+            '<img class="background-img" src="images/15/k-chart.jpg" width="100%" ><span class="cilent-table">K-chart</span>',
+            '<img class="background-img" src="images/15/show-champion.jpg" width="100%" ><span class="cilent-table">Show-champion</span>',
+            '<img class="background-img" src="images/15/umt.jpg" title="УКРАЇНА МАЄ ТАЛАНТ)0)))"><span class="cilent-table">УКРАЇНА МАЄ ТАЛАНТ)0)))</span>'
             
             ]
     },
@@ -264,7 +264,7 @@ function arrangeCards(){
         for (i=1; i<=6; i++) {
             item = {};
             item.id = i;
-            let random = Math.floor(Math.random()*(cardArr.length - 1));
+            let random = Math.floor(Math.random()*(cardArr.length));
             item.answer = cardArr[random];
             cardArr.splice(random, 1);
             newCardArr.push(item);

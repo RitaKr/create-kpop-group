@@ -207,7 +207,7 @@ position: relative;
         margin-left: 0;
     }
     .card {
-        width: 44.5%;
+        width: 44%;
         height: 160px;
         margin: 2%;
     }
@@ -217,10 +217,11 @@ position: relative;
         
     }
     .round-div {
-        display: flexbox;
+        display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        flex-direction: column;
+        
     }
     #all {
         margin: 0 2%;

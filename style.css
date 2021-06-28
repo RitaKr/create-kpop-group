@@ -101,11 +101,18 @@ position: relative;
 #game {
     clear: both;
 }
+.cards-space {
+    display: grid;
+    grid-template-columns: 35% 35% 35%;
+    grid-template-rows: 20vw 20vw;
+    justify-content: center;
+    
+}
 .card {
-    width: 28%;
-    height: 250px;
+    /*width: 28%;
+    height: 250px;*/
     overflow: hidden;
-    margin: 2%;
+    margin: 3%;
     background: #c90075;
     border-radius: 20px;
     display: inline-flex;
@@ -135,11 +142,12 @@ position: relative;
 }
 .background-img {
     position: absolute;
-    top: 0;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     height: 100%;
     overflow: hidden;
+    min-width: 100%;
     z-index: -1;
 }
 .answer-title {
@@ -198,7 +206,23 @@ position: relative;
     align-items: center;
     justify-content: center;
 }
-@media (max-width: 720px) {
+@media (max-width: 1024px) {
+    * {
+        font-size: 0.96em;
+    }
+    #content {
+        padding: 50px;
+        
+    }
+    .card {
+        margin: 4%;
+        border-radius: 15px;
+    }
+}
+@media (max-width: 768px) and (orientation:portrait) {
+    * {
+        font-size: 1em;
+    }
     h2 {
         font-size: 2em;
     }
@@ -206,23 +230,21 @@ position: relative;
         font-size: 2.5em;
         margin-left: 0;
     }
-    .card {
-        width: 44%;
-        height: 160px;
-        margin: 2%;
+    .cards-space {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 40vw 40vw 40vw;
+        
     }
-    
+    .card {
+        
+        border-radius: 10px;
+    }
+
     #content {
         padding: 20px;
         
     }
-    .round-div {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        
-    }
+
     #all {
         margin: 0 2%;
         width: 96%;
@@ -237,5 +259,16 @@ position: relative;
     }
     .answer-title, .visible {
         font-size: 0.85em;
+    }
+}
+
+@media (max-width: 320px) {
+    .cards-space {
+        grid-template-columns: 100%;
+        grid-template-rows: 180px 180px 180px 180px 180px 180px;
+        
+    }
+    .card {
+        margin: 3%;
     }
 }

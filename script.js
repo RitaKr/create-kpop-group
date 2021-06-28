@@ -233,11 +233,14 @@ let gameArr = [
 function arrangeCards(){
     gameArr.forEach(round => {
         let roundDiv = document.createElement('div');
+        let cardsSpace = document.createElement('div');
         let roundH2 = document.createElement('h2');
         roundH2.innerText = round.roundName;
         roundDiv.classList.add(`round-div`);
+        cardsSpace.classList.add(`cards-space`);
         roundDiv.classList.add(`round${round.roundId}`);
         roundDiv.appendChild(roundH2);
+        roundDiv.appendChild(cardsSpace);
         round.cards = arrangeRandomCardObj(round);
         round.cards.forEach(card => {
             let cardDiv = document.createElement('div');
@@ -252,7 +255,7 @@ function arrangeCards(){
             numSpan.innerHTML = card.id;
             cardDiv.appendChild(resSpan);
             cardDiv.appendChild(numSpan);
-            roundDiv.appendChild(cardDiv);
+            cardsSpace.appendChild(cardDiv);
             
         })
         game.appendChild(roundDiv); 

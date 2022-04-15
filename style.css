@@ -36,9 +36,9 @@ position: relative;
 }
 #all {
     position: relative;
-    width: 96%;
-    margin-left: 2%;
-    margin-right: 2%;
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
 }
 #menu {
     position: sticky;
@@ -76,7 +76,7 @@ position: relative;
 }
 
 #content {
-    padding: 20px 80px;
+    padding: 20px 100px;
     background: white;
     clear: both;
 }
@@ -103,8 +103,8 @@ position: relative;
 }
 .cards-space {
     display: grid;
-    grid-template-columns: 35% 35% 35%;
-    grid-template-rows: 20vw 20vw;
+    grid-template-columns: 28% 28% 28%;
+    grid-template-rows: 16vw 16vw;
     justify-content: center;
     
 }

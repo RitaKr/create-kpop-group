@@ -49,20 +49,23 @@ position: relative;
     margin: 0;
     padding: 0;
     z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #menu li {
     display: inline-block;
     padding: 10px 15px;
     border-bottom: 2px #002396 solid;
     transition: all .5s; 
-    position: relative;   
+    position: relative;
+    cursor: pointer;  
 }
 #menu li a {
     display: block;
     text-transform: uppercase;
     transition: all .5s; 
     position: relative;
-    color: white;
     text-decoration: none;
 }
 #menu ul:hover li {
@@ -74,7 +77,24 @@ position: relative;
     border-color: white;
     filter: blur(0)
 }
-
+#bg a {
+    color:#4a71f0;
+}
+#gg a {
+    color:#ff32a9;
+    
+}
+#menu li#bg  {
+    border-color: #002396;
+}
+#menu li#gg {
+    border-color:#c90075;
+}
+.chosenLi {
+    padding: 10px 30px !important;
+    
+    filter: blur(0)
+}
 #content {
     padding: 20px 100px;
     background: white;
@@ -124,6 +144,7 @@ position: relative;
     color: white;
     font-size: 1.5em;
     text-align: center;
+    cursor: pointer;
 }
 .cilent {
     display: none;
